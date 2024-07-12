@@ -1,7 +1,13 @@
-export default function App() {
-  return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
-}
+import React from 'react';
+import CurrencyConverter  from './components/CurrencyConverter';
+import './App.css';
+
+const App: React.FC = () => {
+    return (
+        <div className="app-container">
+            <CurrencyConverter />
+        </div>
+    );
+};
+
+export default App;
